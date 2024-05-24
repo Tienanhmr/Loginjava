@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class LoginBean {
     private Connection connection;
 
-    public LoginBean() throws SQLException {
+    public LoginBean() throws SQLException, ClassNotFoundException {
         // Khởi tạo kết nối tại constructor
         connection = MyConnection.getMyConnection();
     }
